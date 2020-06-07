@@ -10,7 +10,7 @@ Viewing Cricket Scorecard, Cricket Picture Gallery, and browsing articles can be
 User can view fixtures and can download fixtures in this website. <br>
 User can watch Videos and become a critic, basically the one can given their comments about player and their performances. <br>
 User can Sign Up to become a critic and then can login. <br>
-Rankings of various cricket can also be viewed in this website.  <br>
+Rankings of various cricket teams can also be viewed in this website.  <br>
 The frontend of the website has been created by using HTML,CSS and JavaScript . Further to link the website with the backend, PHP has been used. By actioning the xampp server , and connecting with localhost/phpmyadmin the website backend has been build up. 
  
 
