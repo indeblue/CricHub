@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>
+        CricHub Official Website
+    </title>
+    <link href="css/crichubb.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        overflow-y: auto;
+        /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        /* Hide horizontal scrollbar */
+    }
+    
+    .div1 {
+        text-align: center;
+        font-size: 220%;
+        color: white;
+        width: 450px;
+        height: 60px;
+        border: 1px solid #a16408;
+        background-color: black;
+        border-radius: 0.35em;
+    }
+    
+    .div2 {
+        width: 450px;
+        height: 160px;
+        border: 1px solid #a16408;
+        border-radius: 0.65em;
+        background-color: #ff0000;
+    }
+</style>
+
+<body background="images/q11.jpg">
+    <header>
+        <div class="nav-bar"><img class="logo" src="images/criclogo.jpg">
+            <ul class="menu">
+                <li><a href="crichub.html">Home</a></li>
+                <li><a href="fixtures.html">Fixtures</a></li>
+                <li><a href="ipl.html">IPL</a></li>
+                <li><a href="stats.php">STATS</a></li>
+                <li><a href="pro.html">BE AN EXPERT</a></li>
+                <li><a href="ranking.php">Ranking</a></li>
+                <li><a href="about1.html">About US</a></li>
+        </div>
+        </ul>
+    </header>
+    </div><br><br>
+    <p id="rcorners1">Live now! </p>
+
+    <div class="coreb">
+        <div class="div1"> Live Score</div>
+        <div class="div2">
+            <br>
+
+            <div class="csk">
+                <b>    CSK</b> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; <b>MI</b>
+                <br>
+                <br>
+
+                <img src="images/csklogo.jpg" style="width:25%">&nbsp; &nbsp;&nbsp; &nbsp;
+                <b>Vs</b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="images/milogo.png" style="width:25%">
+
+                <br>
+                <b>199/7(20ov) </b>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <b>109/7(18.1)</b>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+    <a href="photog.html">
+        <p id="rcorners1">Photo Gallery </p><br><img id="fr" src="images/colle.jpg" style="width:75%">
+    </a>
+
+    <br><br>
+    <p id="rcorners1">Trending Articles </p><br>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <a href="y1.html">
+                <div class="numbertext">1 / 3</div><img src="images/both.jpg" style="width:250%"></a>
+            <div class="bottom-left">
+                <p id="rcorners5"><a href="y1.html">NEW KIT FOR THE INDIAN TEAM!</div></a></p>
+            </div>
+            <div class="mySlides fade">
+                <a href="y2.html">
+                    <div class="numbertext">2 / 3</div><img src="images/eng.jpg" style="width:250%">
+                </a>
+                <div class="bottom-left">
+                    <p id="rcorners5"><a href="y2.html">The World Cup Winners!</div></a></p>
+                </div>
+                <div class="mySlides fade">
+                    <a href="y3.html">
+                        <div class="numbertext">3 / 3</div><img src="images/viii.jpg" style="width:250%">
+                    </a>
+                    <div class="bottom-left">
+                        <p id="rcorners5"><a href="y3.html">The Chase Master!</div></a>
+                        </p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;
+    </a><a class="next" onclick="plusSlides(1)">&#10095;
+    </a></div><br>
+                <div style="text-align:center"><span class="dot" onclick="currentSlide(1)"></span><span class="dot" onclick="currentSlide(2)"></span><span class="dot" onclick="currentSlide(3)"></span></div>
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                    }
+                </script>
+                <div class="footer">
+                    <center> <b> <font color = "#ffff0f"> Follow us at:</b></font>
+                        <br>
+                        <br>
+                        <br>
+                        <img src="images/twitter.jpg" style="width:5%">
+                        <img src="images/facebook.jpg" style="width:5%">
+                        <img src="images/insta.jpg" style="width:5%">
+                    </center>
+                </div>
+</body>
+
+</html>

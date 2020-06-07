@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <title>
+        CricHub Official Website
+    </title>
+    <link href="css/photog.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        overflow-y: auto;
+        /* Hide vertical scrollbar */
+        overflow-x: hidden;
+        /* Hide horizontal scrollbar */
+    }
+    
+    .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+    /* Style the images inside the grid */
+    
+    .column img {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    
+    .column img:hover {
+        opacity: 1;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* The expanding image container */
+    
+    .container {
+        position: relative;
+        display: none;
+    }
+    /* Expanding image text */
+    
+    #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        font-size: 20px;
+    }
+    /* Closable button inside the expanded image */
+    
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+</style>
+
+<body background="images/cx7.jpg">
+    <header>
+        <div class="nav-bar"><img class="logo" src="images/criclogo.jpg">
+            <ul class="menu">
+                <li><a href="crichub.html">Home</a></li>
+                <li><a href="fixtures.html">Fixtures</a></li>
+                <li><a href="ipl.html">IPL</a></li>
+                <li><a href="stats.php">STATS</a></li>
+                <li><a href="pro.html">BE AN EXPERT</a></li>
+                <li><a href="ranking.php">Ranking</a></li>
+                <li><a href="about1.html">About US</a></li>
+        </div>
+        </ul>
+        </div><br><br>
+
+        <a href="photog.html">
+            <p id="rcorners1">Photo Gallery </p><br>
+        </a>
+
+        <br>
+        <center>
+            <p id="rcorners2"> Photo SlideShow</p><br><br><br>
+        </center>
+        <center>
+            <div class="w3-content w3-section" style="max-width:500px">
+                <img class="mySlides" src="images/colle.jpg" style="width:100%">
+                <img class="mySlides" src="images/boom.jpg" style="width:100%">
+                <img class="mySlides" src="images/dale.jpg" style="width:100%">
+                <img class="mySlides" src="images/lee.jpg" style="width:100%">
+                <img class="mySlides" src="images/test3.jpg" style="width:100%">
+                <img class="mySlides" src="images/viii.jpg" style="width:100%">
+                <img class="mySlides" src="images/js.jpg" style="width:100%">
+                <img class="mySlides" src="images/abd.jpg" style="width:100%">
+                <img class="mySlides" src="images/abb.jpg" style="width:100%">
+            </div>
+        </center>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 1000);
+            }
+        </script>
+        <br><br>
+        <a href="photog.html">
+            <p id="rcorners1">Photo Collage </p><br><img id="fr" src="images/colle.jpg" style="width:75%">
+        </a>
+        <br><br>
+
+
+        <div style="text-align:center">
+            <center>
+                <p id="rcorners2">
+                    World Cup Gallery
+                </p>
+                <p style="color:aliceblue"> Click on the images to get full view:</p>
+        </div>
+        <center>
+
+            <!-- The four columns -->
+            <div class="row">
+                <div class="column">
+                    <img src="images/wc4.jpg" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/wc2.jpg" style="width:90%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/wc3.jpg" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/wc5.jpg" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+            </div>
+
+            <script>
+                function myFunction(imgs) {
+                    var expandImg = document.getElementById("expandedImg");
+                    var imgText = document.getElementById("imgtext");
+                    expandImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandImg.parentElement.style.display = "block";
+                }
+            </script>
+
+
+
+
+
+
+            <br><br>
+
+
+
+
+
+            <center> <b> <font color = "#ffff0f"> Follow us at:</b></font>
+                <br>
+                <br>
+                <br>
+                <img src="images/twitter.jpg" style="width:5%">
+                <img src="images/facebook.jpg" style="width:5%">
+                <img src="images/insta.jpg" style="width:5%">
+            </center>
+</body>
+
+</html>
